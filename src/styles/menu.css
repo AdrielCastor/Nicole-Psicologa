@@ -1,0 +1,349 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#dishes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: var(--color-primary-2);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color-primary-6);
+}
+
+.dish-heart {
+    position: absolute;
+    background-color: var(--color-primary-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--color-primary-1);
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.dish-description {
+    color: var(--color-neutral-1);
+    text-align: center;
+}
+
+.dish-rate i {
+    color: var(--color-primary-6);
+}
+
+.dish-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#info-flex {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    align-items: stretch;
+    margin: 64px 0;
+    flex-wrap: wrap;
+    background: none;
+}
+
+#info-flex aside,
+#info-flex article {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+    padding: 40px 36px;
+    max-width: 420px;
+    width: 100%;
+    min-width: 280px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    transition: box-shadow 0.22s, transform 0.22s;
+    position: relative;
+    overflow: hidden;
+}
+
+#info-flex aside:hover,
+#info-flex article:hover {
+    box-shadow: 0 12px 40px 0 rgba(0,0,0,0.14);
+    transform: translateY(-4px) scale(1.015);
+}
+
+#info-flex .section-title {
+    font-size: 2rem;
+    color: #3d2b1f;
+    margin-bottom: 18px;
+    font-weight: 800;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.online-benefits-content p {
+    font-size: 1.13rem;
+    color: #5a4636;
+    text-align: left;
+    line-height: 1.7;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    border-left: none;
+    margin: 0 0 0 0;
+    box-shadow: none;
+}
+
+.areas-atuacao-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.areas-atuacao-content li {
+    font-size: 1.13rem;
+    color: #5a4636;
+    background: none;
+    border-radius: 0;
+    padding: 0 0 0 28px;
+    margin-bottom: 14px;
+    border-left: none;
+    position: relative;
+    box-shadow: none;
+    line-height: 1.7;
+}
+
+.areas-atuacao-content li::before {
+    content: "✔";
+    color: var(--color-primary-6, #b77b3a);
+    font-size: 1.1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.areas-atuacao-content li.destaque {
+    color: var(--color-primary-6, #b77b3a);
+    font-weight: bold;
+}
+
+.areas-atuacao-content li:last-child {
+    margin-bottom: 0;
+}
+
+.beneficios-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.beneficios-list li {
+    font-size: 1.13rem;
+    color: #5a4636;
+    background: none;
+    border-radius: 0;
+    padding: 0 0 0 28px;
+    margin-bottom: 14px;
+    position: relative;
+    line-height: 1.7;
+}
+
+.beneficios-list li::before {
+    content: "💻"; /* Ou use outro emoji, como "✔️", "🌐", "💻", etc */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.1em;
+    color: var(--color-primary-6, #b77b3a);
+}
+.beneficios-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+#faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 64px 0 48px 0;
+    background: none;
+}
+
+.faq-card {
+    background: var(--color-primary-1);
+    border-radius: 28px;
+    box-shadow: 0 8px 32px 0 rgba(58,134,255,0.10), 0 2px 12px 0 rgba(0,0,0,0.06);
+    padding: 48px 40px;
+    max-width: 2000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    gap: 24px;
+}
+
+.faq-card .section-title {
+    font-size: 2.3rem;
+    color: #3d2b1f;
+    font-weight: 900;
+    margin-bottom: 18px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.faq-question h3 {
+    font-size: 1.22rem;
+    color: var(--color-primary-6, #b77b3a);
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.faq-question p,
+.faq-question ul,
+.faq-question strong {
+    color: #5a4636;
+    font-size: 1.13rem;
+    text-align: left;
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
+.faq-question ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 14px 0;
+}
+
+.faq-question ul li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+}
+
+.faq-question ul li::before {
+    content: "✔";
+    color: var(--color-primary-6, #b77b3a);
+    font-size: 1.1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media (max-width: 900px) {
+    .faq-card {
+        max-width: 98vw;
+        padding: 24px 10px;
+        border-radius: 18px;
+    }
+    .faq-card .section-title {
+        font-size: 1.4rem;
+    }
+}
+
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 900px) {
+    #info-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    #info-flex aside,
+    #info-flex article {
+        max-width: 98vw;
+        padding: 28px 10px;
+    }
+    #info-flex .section-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #info-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    #info-flex aside,
+    #info-flex article {
+        max-width: 98vw;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dish {
+        width: 100%;
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+} 
+
+@media (max-width: 900px) {
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #menu .section-title,
+    #menu .section-subtitle {
+        text-align: center;
+        width: 100%;
+    }
+    #dishes {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+    .dish {
+        margin: 0 0 32px 0;
+        width: 100%;
+        max-width: 400px;
+    }
+}
