@@ -11,6 +11,8 @@
     height: auto;
     border: 3px solid var(--color-primary-5);
     border-radius: 80px;
+    display: block;
+    max-width: 100%;
 }
 
 #testimonials .section-subtitle {
@@ -55,10 +57,12 @@
     color: var(--color-primary-6);
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 600px) {
     #testimonials {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
     }
+
 
     #testimonials .section-subtitle {
         text-align: center;
@@ -66,7 +70,9 @@
     }
 
     #testimonial_chef {
-        display: none;
+        width: 350px;
+        max-width: 100%;
+        display: block;
     }
 
     #testimonials_content {
